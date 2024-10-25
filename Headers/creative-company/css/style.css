@@ -1,0 +1,425 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Aqui comienza el proyecto */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+:root {
+  --color-blue: #515DEF ;
+  --color-black: #333333;
+  --color-grey: #909090;
+  --color-white:  #FBFBFB;
+  --font-primary: "poppins", sans-serif;
+
+}
+
+
+body{
+  margin:0;
+  padding:0;
+  background-image: url("../img/mask_group@2x.jpg");
+  background-position: top right -100px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: var(--color-blue)
+}
+
+.page {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  
+
+}
+
+header {
+  display:flex;
+  padding-top:33px;
+  padding-bottom: 33px;
+  gap:148px;
+  margin-bottom: 40px;
+  
+
+  
+
+
+}
+
+header figure {
+  margin:0;
+  padding:0;
+
+  
+}
+
+
+
+
+header figcaption {
+  display:none
+}
+
+
+nav {
+  width:100%;
+}
+
+header nav ul {
+ 
+  list-style:none;
+  display:flex;
+  gap:56px;
+  align-items: center;
+  margin: 0;
+  padding-left:0;
+
+}
+
+header nav ul a {
+ 
+text-decoration: none;
+color:white;
+font-weight: 200;
+
+}
+
+header nav ul a:hover {
+ 
+  text-decoration: underline;
+  
+  
+  }
+  
+
+nav ul li:last-child {
+  margin-left: auto;
+  
+}
+
+
+nav ul li:last-child a {
+  margin-left: auto;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--color-blue);
+
+}
+
+nav ul li:last-child a:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  text-align: none;
+
+}
+
+
+section.hero {
+  width: 60%;
+  color: white;
+  margin-bottom: 60px;
+}
+
+
+.hero p {
+  font-weight: 400px;
+  font-size: 18px;
+  margin:0;
+  margin-bottom: 30px;
+
+}
+
+
+.hero h1{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2em;
+  margin:0;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  display:inline-block;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding:10px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  margin:0;
+  margin-bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+
+}
+
+section.categories {
+  background-color: var(--color-white);
+  display:flex;
+  justify-content: space-between;
+  padding: 30px 110px;
+  gap:40px;
+  width:60%;
+  width: 970px;
+  box-sizing: border-box;
+ transform: translateX(-150px);
+  
+}
+
+section.categories h3 {
+  font-size: 18px;
+  color:var(--color-black)
+}
+
+section.categories p {
+  font-size: 18px;
+  color:var(--color-grey);
+  font-weight: 200;
+}
