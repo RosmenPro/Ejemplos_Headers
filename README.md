@@ -5,7 +5,7 @@ Este repositorio contiene ejemplos de cuatro headers diferentes creados con HTML
 ## Tecnologías Utilizadas
 
 - HTML
-- CSS3
+- CSS
 
 ## Vista Previa
 
