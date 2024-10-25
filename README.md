@@ -48,8 +48,8 @@ A continuación, se presentan capturas de pantalla de cada header:
 3. Abre el archivo "index.html" en tu navegador para visualizar el encabezado.
 4. Haz clic en Html para ver el código HTML o en Css para ver el código CSS.
 
-##Contribuciones
+## Contribuciones
 Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras, siéntete libre de crear un pull request.
 
-##Licencia
+## Licencia
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
