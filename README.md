@@ -84,6 +84,10 @@ Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras, siéntete l
 ## Licencia
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
+## Autor
+
+- **Rosmén Valencia** - [PerfilGitHub](https://github.com/RosmenPro)
+
 ---
 
 # Examples of Headers in HTML and CSS
@@ -171,3 +175,8 @@ Contributions are welcome. If you have suggestions or improvements, feel free to
 
 ## License
 This project is under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Author
+
+- **Rosmén Valencia** - [GitHubProfile](https://github.com/RosmenPro)
+
